@@ -16,8 +16,6 @@ function index() {
 }
 
 
-
-
 function create(body) {
   return axios
   .post(`${BASE_URL}/constellations`, body)
@@ -28,8 +26,6 @@ function create(body) {
     console.error(message);
   });
 }
-
-
 
 
 function show(id) {
@@ -44,8 +40,6 @@ function show(id) {
 }
 
 
-
-
 function update(id, body) {
   return axios
   .put(`${BASE_URL}/constellations/${id}`, body)
@@ -56,8 +50,6 @@ function update(id, body) {
     console.error(message);
   });
 }
-
-
 
 
 function destroy(id) {
@@ -72,10 +64,6 @@ function destroy(id) {
 }
 
 
-
-
-
-
 module.exports = {
   index,
   create,
@@ -83,38 +71,4 @@ module.exports = {
   update,
   destroy,
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
